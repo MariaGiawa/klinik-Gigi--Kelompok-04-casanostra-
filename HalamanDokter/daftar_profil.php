@@ -16,8 +16,8 @@
   <header id="header" class="header fixed-top">
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
 
-      <a href="index.html" class="logo d-flex align-items-center">
-        <img src="upload/gigi.png" alt="">
+      <a href="#" class="logo d-flex align-items-center">
+        <img src="images/gigi.png" alt="">
         <span>Klinik Gigi</span>
       </a>
 
@@ -55,12 +55,12 @@
 
           <div class="col-md-3 mt-4">
             <div class="card brder-dark">
-              <img src="upload/<?php echo $result['gambar'] ?>" class="card-img-top" alt="...">
+              <img src="images/<?php echo $result['gambar'] ?>" class="card-img-top" alt="...">
               <div class="card-body">
                 <h4 class="card-title font-weight-bold"><?php echo $result['nama_dokter'] ?></h4>
                 <h6 class="card-title "><?php echo $result['deskripsi'] ?></h6>
-                <a href="edit_data.php?id_dokter=<?php echo $result['id_dokter']  ?>" class="btn btn-success btn-sm btn-block">EDIT</a>
-                <a href="hapus_data.php?id_dokter=<?php echo $result['id_dokter']  ?>" class="btn btn-danger btn-sm btn-block text-light">HAPUS</a>
+                <a href="edit_data.php?id_dokter=<?php echo $result['id_dokter']  ?>" class="btn btn-success btn-sm ">EDIT</a>
+                <a href="hapus_data.php?id_dokter=<?php echo $result['id_dokter']  ?>" class="btn btn-danger btn-sm text-light">HAPUS</a>
               </div>
             </div>
           </div>

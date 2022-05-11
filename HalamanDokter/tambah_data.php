@@ -21,8 +21,8 @@ include 'koneksi.php';
  <header id="header" class="header fixed-top">
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
 
-      <a href="index.html" class="logo d-flex align-items-center">
-        <img src="upload/gigi.png" alt="">
+      <a href="#" class="logo d-flex align-items-center">
+        <img src="images/gigi.png" alt="">
         <span>Klinik Gigi</span>
       </a>
 
@@ -46,15 +46,15 @@ include 'koneksi.php';
     <div class="card p-5 mb-5">
       <form method="POST" action="" enctype="multipart/form-data">
         <div class="form-group">
-          <label for="menu1">Nama Dokter</label>
+          <label for="nama">Nama Dokter</label>
           <input type="text" class="form-control" id="dokter1" name="nama_dokter">
         </div>
         <div class="form-group">
-          <label for="stok1">Nomor HP</label>
+          <label for="noHP">Nomor HP</label>
           <input type="text" class="form-control" id="no_HP" name="no_HP">
         </div>
         <div class="form-group">
-          <label for="harga1">Deskripsi</label>
+          <label for="deskripsi">Deskripsi</label>
           <input type="text" class="form-control" id="deskripsi" name="deskripsi">
         </div>
         <div class="form-group">
@@ -72,7 +72,7 @@ include 'koneksi.php';
     $deskripsi = $_POST['deskripsi'];
     $nama_file = $_FILES['gambar']['name'];
     $source = $_FILES['gambar']['tmp_name'];
-    $folder = './upload/';
+    $folder = './images/';
 
     move_uploaded_file($source, $folder.$nama_file);
     $insert = mysqli_query($koneksi, "INSERT INTO dokter VALUES (NULL, '$nama_dokter', '$no_HP', '$deskripsi', '$nama_file')");

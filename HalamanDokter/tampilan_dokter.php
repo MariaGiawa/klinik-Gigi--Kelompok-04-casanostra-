@@ -16,17 +16,17 @@
   <header id="header" class="header fixed-top">
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
 
-      <a href="index.html" class="logo d-flex align-items-center">
-        <img src="upload/gigi.png" alt="">
+      <a href="#" class="logo d-flex align-items-center">
+        <img src="images/gigi.png" alt="">
         <span>Klinik Gigi</span>
       </a>
 
       <nav id="navbar" class="navbar">
         <ul>
           <li><a class="nav-link scrollto " href=#">Beranda</a></li>
-          <li><a class="nav-link scrollto" href="tampilan_dokter.php">Dokter</a></li>        
+          <li><a class="nav-link scrollto active" href="tampilan_dokter.php">Dokter</a></li>        
          <li><a class="nav-link scrollto" href="#">Schedule</a></li>
-         <a class="nav-link scrollto active" href="daftar_profil.php">Kelola Dokter</a></li>
+         <a class="nav-link scrollto " href="daftar_profil.php">Kelola Dokter</a></li>
          <li><a class="getstarted scrolltoo" href="#about">Logout</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
@@ -53,11 +53,11 @@
 
           <div class="col-md-3 mt-4">
             <div class="card brder-dark">
-              <img src="upload/<?php echo $result['gambar'] ?>" class="card-img-top" widht="150 px">
+              <img src="images/<?php echo $result['gambar'] ?>" class="card-img-top" widht="150 px">
               <div class="card-body">
               <h4 class="card-title font-weight-bold"><?php echo $result['nama_dokter'] ?></h4>
                 <h6 class="card-title "><?php echo $result['deskripsi'] ?></h6>
-                <a href="#"class="btn btn-success btn-sm btn-block ">Detail</a>
+                <a href="#"class="btn btn-success btn-sm " >Detail</a>
               </div>
             </div>
           </div>
